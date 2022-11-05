@@ -17,7 +17,7 @@
 <?php 
 //localhost/foler
 echo base_url();
-//localhost/folder/index.php
+//localhost/folder/index.php;
 echo site_url();
 
 ?>
