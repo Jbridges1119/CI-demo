@@ -79,6 +79,16 @@ class Home extends CI_Controller {
 				redirect( 'home', 'refresh' );
 			}
 		}
+
+		public function logout() {
+
+			session_unset();
+
+			session_destroy();
+
+			redirect('home', 'refresh');
+		}
+
 }
 
 /* End of file Home.php and path \application\controllers\Home.php */
