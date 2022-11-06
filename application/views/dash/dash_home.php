@@ -19,7 +19,22 @@ if ( !$_SESSION['u_name'] ) {
 
 	<!-- dash nav -->
 	<?php $this->load->view('dash/inc/nav'); ?>
-	
+	<!-- dash nav -->
+
+	<!-- dash data -->
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-3">
+				<!-- sidebar -->
+				<?php $this->load->view('dash/inc/sidebar'); ?>
+				
+				<!-- sidebar -->
+			</div>
+		
+			</div>
+		</div>
+	</div>
+	<!-- dash data -->
 
 
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
