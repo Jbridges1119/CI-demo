@@ -9,7 +9,11 @@ class Jobs_model extends CI_Model
 			
 	
     }                        
-                        
+    public function delete_job($job_data)
+		{
+			$this->db->delete('jobs', ['j_id' => $job_data['j_id']]);
+			
+		}                    
 }
 
 

@@ -34,7 +34,7 @@ $id = $this->uri->segment(3);
 			<div class="panel panel-default">
 				<div class="panel-heading">Update Job</div>
 				<div class="panel-body">
-				<?php echo form_open('jobs/update__process_job/'.$id, 'class="form-horizontal"'); ?>
+				<?php echo form_open('jobs/update_process_job/'.$id, 'class="form-horizontal"'); ?>
                 <?php
 
 							

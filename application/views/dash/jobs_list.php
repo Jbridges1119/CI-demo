@@ -46,7 +46,7 @@ if ( !$_SESSION['u_name'] ) {
 		<td><?php echo $job->j_id; ?></td>
 		<td><?php echo $job->j_name; ?></td>
 		<td><a href="<?php echo site_url(); ?>jobs/update_job/<?php echo $job->j_id; ?>" class="btn btn-warning btn-block btn-xs">Edit</a></td>
-		<td><a href="#" class="btn btn-danger btn-block btn-xs">Delete</a></td>
+		<td><a href="<?php echo site_url(); ?>jobs/delete_job/<?php echo $job->j_id; ?>" class="btn btn-danger btn-block btn-xs">Delete</a></td>
 	</tr>
 
 <?php

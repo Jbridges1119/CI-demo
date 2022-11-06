@@ -43,7 +43,32 @@ class Jobs extends CI_Controller {
 			
 		}
 
-		
+		public function update_process_job( $j_id ) {
+			if ( $this->input->post('update_job') ) 
+			{
+				$j_name = $this->input->post('j_name');
+
+				$job_details = [
+					'j_name' => $j_name
+				];
+				
+				$this->db->where('j_id', $j_id);
+				$this->db->update('jobs', $job_details);
+				redirect('jobs/view_jobs', 'refresh');
+								
+			}
+		}
+
+		public function delete_job($j_id) 
+		{
+			$jobs_data = [
+				'j_id' => $j_id
+			];
+
+			$this->Jobs_model->delete_job($jobs_data);
+			
+			redirect('jobs/view_jobs', 'refresh');
+		}
 }
 
 /* End of file Jobs.php and path \application\controllers\Jobs.php */
